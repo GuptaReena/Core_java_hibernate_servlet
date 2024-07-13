@@ -1,0 +1,7 @@
+
+//In this file we configure with the connection url ,username,passwors
+public class HibernateUtil {
+
+	static SessionFactory sessionFactory;
+	
+}

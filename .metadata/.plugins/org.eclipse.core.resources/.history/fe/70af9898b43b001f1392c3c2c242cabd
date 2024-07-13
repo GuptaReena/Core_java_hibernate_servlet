@@ -1,0 +1,67 @@
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class SelectDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		// step1 : Load Drivers
+		
+		try {
+			Class.forName("com.mysql.jdbc.Driver");
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+		// step2 : Establish Connection
+		
+		
+		Connection conn = null;
+		Statement stmt = null;
+		
+		String connUrl = "jdbc:mysql://localhost:3306/demodb";
+		String userName = "root";
+		String password = "root";
+		
+		
+		 try {
+			 conn = DriverManager.getConnection(connUrl, userName, password);
+			System.out.println("Connection Establish .....");
+			
+			 stmt = conn.createStatement();
+			String selectQuery = "select * from person_details";
+			
+			int rowAffected  = stmt.executeUpdate(select);
+			
+			
+			
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		 finally {
+			 try {
+				stmt.close();
+				 conn.close();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+		 }
+		
+		
+		
+		// step3 : create statement and execute it
+		// step4 : Handle exception
+		
+		
+	}
+
+}

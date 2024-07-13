@@ -1,0 +1,22 @@
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+
+public class HibernateInsertDemo {
+
+	//Step 1: Obtain the Session factory
+	
+	SessionFactory sessionFactory = HibernateUtil.giveSessionFactory() ;
+	
+	
+	//Step 2: From session factory open session 
+	
+	Session session =  sessionFactory.openSession();
+	
+	
+	try(sessionFactory;session){
+		
+	}catch(Exception e) {
+		e.printStackTrace();
+	}
+}
+

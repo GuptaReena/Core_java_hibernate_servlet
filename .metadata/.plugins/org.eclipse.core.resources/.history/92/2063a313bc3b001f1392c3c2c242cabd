@@ -1,0 +1,72 @@
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class InsertDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		// Step 1 : Load the driver
+		
+		try {
+			Class.forName("com.mysql.jdbc.Driver");
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+		
+		// Step 2 : Establish the connection to the db server
+		
+		Connection conn = null;
+		Statement stmt = null;
+		String connectionUrl = "jdbc:mysql://localhost:3306/demodb";
+		String userName = "root";
+		String password = "root";
+		
+		 try {
+			conn = DriverManager.getConnection(connectionUrl, userName, password);
+			System.out.println("Connection Established!");
+			
+				
+			
+		// step 3 : create a statement and execute it
+			stmt = conn.createStatement();
+			String insertQuery = "INSERT INTO person_details(person_id,person_firstname,person_lastname,person_dob,person_mobile_no,person_city) \r\n"
+					+ "VALUES (110, 'Rutuja','Borade','2001-06-04',1255501221,'US')";
+		
+			String updateQuery = "Update person_details set person_id = 109 where person_id = 110";
+			
+//			String deleteQuery = "delete from person_details where person_id =  ";
+			
+//			int rowsAffected1 = stmt.executeUpdate(insertQuery);
+//			int rowsAffected = stmt.executeUpdate(updateQuery);
+			int rowsAffected2 = stmt.executeUpdate(deleteQuery);
+			System.out.println(rowsAffected2 + "rowsAffected... " );
+		 
+		 } catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		 finally {
+			try {
+				stmt.close();
+				conn.close();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		
+		
+		
+		// Step 4 : Handling the exception
+		
+		
+		
+	}
+
+}

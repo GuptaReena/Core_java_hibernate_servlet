@@ -1,0 +1,22 @@
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+
+public class HibernatePaginationDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		SessionFactory sessionFactory = HibernateUtil.getSession();
+		
+		Session session = sessionFactory.openSession();
+		
+		
+		int pageNumber = 1;
+		int pageSize = 5;
+		int firstResult = (pageNumber - 1) * pageSize
+		
+		
+	}
+
+}

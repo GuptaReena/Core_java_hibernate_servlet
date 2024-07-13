@@ -1,0 +1,48 @@
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+
+public class InsertDemo {
+
+	public static void main(String[] args) {
+
+		// TODO Auto-generated method stub
+
+
+		//step 1: Obtain session Factory
+		
+		SessionFactory sessionFactory = HibernateUtil.giveSessionFactory();
+		System.out.println("Obtained a sesion Factory......");
+		
+		//Step 2:  From session factory open a session
+		
+		Session session = sessionFactory.openSession();
+		System.out.println("Open a session.....");
+		
+		// try with resource is used to close the opened session automatically
+		try(sessionFactory; session){
+			
+			//Step 3: Begin the transaction
+			session.beginTransaction();
+			System.out.println("Begin the transaction......");
+			
+			//Step 4: Perform Insert Operation
+			EmployeeEntity empEntity =  new EmployeeEntity(105,"Kaushal","9082992804",503);
+			
+			
+			session.persist(empEntity);
+			System.out.println("Entity object Persisted.....");
+			
+			
+			session.getTransaction().commit();
+			System.out.println("Transaction commited.....");
+			
+			
+		}catch(Exception e) {
+			
+			e.printStackTrace();
+		}
+		
+		
+	}
+
+}

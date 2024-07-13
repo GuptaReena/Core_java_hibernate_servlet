@@ -1,0 +1,19 @@
+package com.bms.dao;
+
+public class DBUtils {
+	
+	//Step 1: Load Drivers
+	
+	static {
+	try {
+		Class.forName("com.msql.cj.jbdc.Driver");
+	} catch (ClassNotFoundException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+	}
+	//Establish Connection
+	
+	//close the connection
+
+}

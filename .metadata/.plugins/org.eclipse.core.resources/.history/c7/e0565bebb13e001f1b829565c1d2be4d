@@ -1,0 +1,30 @@
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+
+public class HibernateSelectAllDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		//Step 1: Get session from HibernateUtils
+		System.out.println("Obtain the session factory");
+		SessionFactory sessionFactory =  HibernateUtil.getSession();
+		
+		//Step 2: Open a session from the session Factory
+		System.out.println("Going to Open the session ");
+		Session session = sessionFactory.openSession();
+		
+		
+		//Step 3: Begin the Transaction
+		System.out.println("Going to begin the transaction");
+		session.beginTransaction();
+		
+		//step 4 :Perform the Select Operation
+		
+		
+		
+		
+		
+	}
+
+}

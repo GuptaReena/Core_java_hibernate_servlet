@@ -1,0 +1,74 @@
+02/05/2024
+-----------------------
+	--Wrapper Class
+		-For 8 primitive data type we have 8 equivalent wrapper type
+			byte = Byte
+			short = Short
+			int = Integer
+			float = Float
+			double = Double
+			char = Character
+			boolean = Boolean
+		
+		-primitive type start from small letter but Wrapper type is a class its start with Capital letter
+		-we cannot create an object for primitive type but wapper type is a class we can create an object of the wrapper type
+			-Eg: Float f1 = new Float(4.86)
+		-AutoBoxing : automatic conversion between primitive type and their wrapper classes
+			-Eg :int mark =  20;
+				 Integer myMark = mark; //with autoboxig we are assigning primitive to wrapper class
+				 int allMark = myMark; // we are assigning wrapper type to primitive type
+				 Integer marks =  new Integer(mark); //without autoboxing 
+				 int allMark =  myMark.intValue(); //without autoboxing
+		-The wrapper class are inside the java.lang package
+		-preferred : Wrapper type or primitive type?
+			- The primitive types takes less memory then wrapper types so primitive type is preferred 
+			-However if we perform some operation then we can go for wrapper type it is situation 
+		-String is considered as universal data type.
+		-so conversion between string and other data type is important
+		-the wrapper class gives the option for conversion
+			Eg: Convert the String to integer
+				String str = "45";
+				Integer itr = Integer.parseInt(str);
+				int itr =  Integer.parseInt(str); // can do this with autoboxing
+			eg: Convert the Integer to String
+				Integer mark =  16;
+				String str = mark.toString(mark);//
+				String str = mark + "";
+		
+	--Dynamic Array
+
+03/05/2024
+ ----------
+ - completed remove item of dynamic array
+ - functional interfaces
+ 	Vinod Chandra 17:46
+		functional interfaces are the interfaces that have only 1 abstract method . 
+		they are called like that from java 8
+		before java 8 they are called single abstract method interfaces(SAM)
+	- eg: Runnable, Comparator
+	- @FunctionalInterface
+		- this interface is used above a functional interface to make sure it is a functional interface 
+ - ways of implementing functional interfaces
+ 	- there are 3 ways
+ 		1) Conventional way - create a class and implement the interface
+ 		2) Anonymous classes
+ 		3) Lambda expressions
+ 		
+ 06/05/2024
+ -----------
+ Generics in java
+ 	- Ankit Raj 17:46
+		way to create classes, interfaces, and methods that operate on different types while providing compile-time type safety
+		meaning it can detect and prevent type errors at compile time rather than at runtime....
+	- we can only pass a class as generic type
+	- we cannot pass primitive data types
+Collections in java
+	- intro to collections
+	- collections vs array
+	- collection hierarchy diagram
+		
+			  				 			  
+		
+			 
+		
+		 

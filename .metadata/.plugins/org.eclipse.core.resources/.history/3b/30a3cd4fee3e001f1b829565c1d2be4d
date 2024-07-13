@@ -1,0 +1,7 @@
+import jakarta.persistence.Entity;
+
+@Entity
+@Table(name="product")
+public class ProductEntity {
+
+}

@@ -1,0 +1,11 @@
+127.0.0.1 - - [08/Jul/2024:19:35:24 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [08/Jul/2024:19:35:26 +0530] "GET /StudentTracker/StudentControllerServlet HTTP/1.1" 200 3121
+0:0:0:0:0:0:0:1 - - [08/Jul/2024:19:35:26 +0530] "GET /StudentTracker/css/style1.css HTTP/1.1" 200 1082
+0:0:0:0:0:0:0:1 - - [08/Jul/2024:19:35:32 +0530] "GET /StudentTracker/add-student-form.jsp HTTP/1.1" 200 1337
+0:0:0:0:0:0:0:1 - - [08/Jul/2024:19:35:32 +0530] "GET /StudentTracker/css/add-student.css HTTP/1.1" 200 630
+0:0:0:0:0:0:0:1 - - [08/Jul/2024:19:35:32 +0530] "GET /StudentTracker/js/student-validation.js HTTP/1.1" 404 798
+0:0:0:0:0:0:0:1 - - [08/Jul/2024:19:36:01 +0530] "GET /StudentTracker/StudentControllerServlet?command=ADD&firstName=Arohi&lastName=Gupta&email=aarohi1408@gmail.com HTTP/1.1" 200 -
+0:0:0:0:0:0:0:1 - - [08/Jul/2024:19:36:14 +0530] "GET /StudentTracker/StudentControllerServlet HTTP/1.1" 200 3278
+0:0:0:0:0:0:0:1 - - [08/Jul/2024:19:36:24 +0530] "GET /StudentTracker/StudentControllerServlet?command=LOAD&studentId=8 HTTP/1.1" 200 1502
+0:0:0:0:0:0:0:1 - - [08/Jul/2024:19:36:24 +0530] "GET /StudentTracker/js/student-validation.js HTTP/1.1" 404 798
+0:0:0:0:0:0:0:1 - - [08/Jul/2024:19:36:26 +0530] "GET /StudentTracker/StudentControllerServlet HTTP/1.1" 200 3278

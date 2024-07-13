@@ -1,0 +1,5 @@
+127.0.0.1 - - [06/Jul/2024:21:28:40 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [06/Jul/2024:21:28:42 +0530] "GET /StudentTracker/login.jsp HTTP/1.1" 200 4204
+0:0:0:0:0:0:0:1 - - [06/Jul/2024:21:28:42 +0530] "GET /StudentTracker/css/style.css HTTP/1.1" 200 2608
+0:0:0:0:0:0:0:1 - - [06/Jul/2024:21:28:50 +0530] "GET /StudentTracker/login.jsp?theLocale=de_DE HTTP/1.1" 200 4190
+0:0:0:0:0:0:0:1 - - [06/Jul/2024:21:28:52 +0530] "GET /StudentTracker/login.jsp?theLocale=en_US HTTP/1.1" 200 4204

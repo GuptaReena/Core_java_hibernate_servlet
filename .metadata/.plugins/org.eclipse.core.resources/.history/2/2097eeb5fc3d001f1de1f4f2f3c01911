@@ -1,0 +1,35 @@
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+
+public class InsertDemo {
+
+	public static void main(String[] args) {
+
+		// TODO Auto-generated method stub
+
+
+		//step 1: Obtain session Factory
+		
+		SessionFactory sessionFactory = HibernateUtil.giveSessionFactory();
+		
+		
+		//Step 2: Use open session from session factory
+		
+		Session session = sessionFactory.openSession();
+		
+		// try with resource is used to close the opened session automatically
+		try(sessionFactory; session){
+			
+			session.beginTransaction();
+			EmployeeEntity empEntity =  new EmployeeEntity(105,"Kaushal","9082992804",503);
+			
+			
+		}catch(Exception e) {
+			
+			e.printStackTrace();
+		}
+		
+		
+	}
+
+}

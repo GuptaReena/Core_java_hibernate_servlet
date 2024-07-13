@@ -1,0 +1,20 @@
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name="products")
+public class ProductEntity {
+	
+	@Id
+	@Column(name="productCode")
+	int productCode;
+	
+	@Column(name="productName")
+	String productName;
+	
+	@Column(name="productDescription")
+	String productDescription;
+
+}

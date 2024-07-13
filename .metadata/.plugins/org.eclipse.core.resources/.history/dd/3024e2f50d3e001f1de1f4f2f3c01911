@@ -1,0 +1,24 @@
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name="employee")
+public class EmployeeEntity {
+
+	@Id
+	@Column(name="emp_id")
+	int empId;
+	
+	@Column(name="emp_name")
+	String empName;
+	
+	@Column(name="emp_contact")
+	String empContact;
+	
+	@Column(name="emp_dept")
+	int empDept;
+	
+	
+}

@@ -1,0 +1,22 @@
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+
+public class HibernateDemo2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		SessionFactory sessionFactory =  HibernateUtil.getSession();
+		
+		Session session =  sessionFactory.openSession();
+		
+		
+		ProductEntity allProducts = session.get(ProductEntity.class, "S10_1678");
+		System.out.println("Product Name " + allProducts.getProductCode());
+		System.out.println("Product Name " + allProducts.getProductName());
+		System.out.println("Product Line " + allProducts.getProductLine());
+		
+		
+	}
+
+}

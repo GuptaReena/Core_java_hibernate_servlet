@@ -1,0 +1,13 @@
+
+
+@Entity
+
+
+public class EmployeeEntity {
+
+	int emp_Id;
+	String employeeName;
+	int empContact;
+	String empDept;
+	
+}

@@ -1,0 +1,16 @@
+127.0.0.1 - - [12/May/2021:17:51:40 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [12/May/2021:17:51:41 +0530] "GET /EmployeeManagement/print-emp-form.jsp HTTP/1.1" 200 1132
+0:0:0:0:0:0:0:1 - - [12/May/2021:17:52:42 +0530] "GET /EmployeeManagement/EmployeeControllerServelet HTTP/1.1" 200 5167
+0:0:0:0:0:0:0:1 - - [12/May/2021:17:52:45 +0530] "GET /EmployeeManagement/EmployeeControllerServelet;jsessionid=C31B8A6766DD4DC8B8F799F3414ED260?command=LPRINT&empId=2 HTTP/1.1" 200 1192
+0:0:0:0:0:0:0:1 - - [12/May/2021:17:52:49 +0530] "GET /EmployeeManagement/EmployeeControllerServelet?command=LIST&empId=2 HTTP/1.1" 200 4639
+127.0.0.1 - - [12/May/2021:19:46:04 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [12/May/2021:19:46:06 +0530] "GET /EmployeeManagement/list-project.jsp HTTP/1.1" 200 1698
+127.0.0.1 - - [12/May/2021:20:18:34 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [12/May/2021:20:18:35 +0530] "GET /EmployeeManagement/list-project.jsp HTTP/1.1" 200 1698
+0:0:0:0:0:0:0:1 - - [12/May/2021:20:18:45 +0530] "GET /EmployeeManagement/list-project.jsp HTTP/1.1" 200 1698
+127.0.0.1 - - [12/May/2021:20:21:06 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [12/May/2021:20:21:07 +0530] "GET /EmployeeManagement/ProjectControllerServlet HTTP/1.1" 500 1600
+0:0:0:0:0:0:0:1 - - [12/May/2021:20:21:50 +0530] "GET /EmployeeManagement/WEB-INF/classes/emp/ProjectDbUtil.java HTTP/1.1" 404 682
+0:0:0:0:0:0:0:1 - - [12/May/2021:20:21:57 +0530] "GET /EmployeeManagement/ProjectControllerServlet HTTP/1.1" 500 1600
+0:0:0:0:0:0:0:1 - - [12/May/2021:20:24:52 +0530] "GET /EmployeeManagement/EmployeeControllerServelet HTTP/1.1" 200 4639
+0:0:0:0:0:0:0:1 - - [12/May/2021:20:25:08 +0530] "GET /EmployeeManagement/ProjectControllerServlet HTTP/1.1" 500 1600

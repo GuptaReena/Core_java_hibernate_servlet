@@ -1,0 +1,35 @@
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+
+public class SelectDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		//Step 1 : Get session from Hibernate util		
+		System.out.println("Going to Obtain session Factory");
+		SessionFactory sessionFactory =  HibernateUtil.getSession();
+		
+		//Step 2 : Open a Session from session Factory
+		System.out.println("Going to open the session.....");
+		Session session = sessionFactory.openSession();
+		
+		
+		try(sessionFactory;session){
+			
+			//Step 3 : Begin Transaction
+			System.out.println("Going to Begin the transaction.....");
+			session.beginTransaction();
+			
+			
+			//Step 5 : Commit the Transaction
+			System.out.println("Going to Commit the transaction.....");
+			session.getTransaction().commit();
+			
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		
+	}
+
+}

@@ -1,0 +1,6 @@
+127.0.0.1 - - [19/Apr/2021:16:31:28 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [19/Apr/2021:16:31:29 +0530] "GET /test-jstl/function-test.jsp HTTP/1.1" 500 2665
+0:0:0:0:0:0:0:1 - - [19/Apr/2021:16:32:06 +0530] "GET /test-jstl/function-test.jsp HTTP/1.1" 500 8812
+0:0:0:0:0:0:0:1 - - [19/Apr/2021:16:33:41 +0530] "GET /test-jstl/function-test.jsp HTTP/1.1" 500 8812
+0:0:0:0:0:0:0:1 - - [19/Apr/2021:16:35:06 +0530] "GET /test-jstl/function-test.jsp HTTP/1.1" 200 500
+0:0:0:0:0:0:0:1 - - [19/Apr/2021:16:35:37 +0530] "GET /test-jstl/function-test.jsp HTTP/1.1" 200 474

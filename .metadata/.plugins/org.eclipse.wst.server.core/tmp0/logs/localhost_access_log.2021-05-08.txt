@@ -1,0 +1,11 @@
+127.0.0.1 - - [08/May/2021:00:20:35 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [08/May/2021:00:20:35 +0530] "GET /EmployeeManagement/emphome.jsp HTTP/1.1" 200 2564
+0:0:0:0:0:0:0:1 - - [08/May/2021:00:20:38 +0530] "GET /EmployeeManagement/login.jsp HTTP/1.1" 200 1538
+0:0:0:0:0:0:0:1 - - [08/May/2021:00:22:06 +0530] "GET /EmployeeManagement/emphome.jsp HTTP/1.1" 200 2564
+0:0:0:0:0:0:0:1 - - [08/May/2021:00:22:18 +0530] "GET /EmployeeManagement/login.jsp HTTP/1.1" 200 1536
+0:0:0:0:0:0:0:1 - - [08/May/2021:00:22:27 +0530] "GET /EmployeeManagement/admin.jsp?command=LOGIN&user=admin&pass=admin HTTP/1.1" 200 1660
+0:0:0:0:0:0:0:1 - - [08/May/2021:00:22:29 +0530] "GET /EmployeeManagement/EmployeeControllerServelet HTTP/1.1" 200 3496
+0:0:0:0:0:0:0:1 - - [08/May/2021:00:25:12 +0530] "GET /EmployeeManagement/add-emp-form.jsp HTTP/1.1" 200 1320
+0:0:0:0:0:0:0:1 - - [08/May/2021:00:26:26 +0530] "GET /EmployeeManagement/EmployeeControllerServelet?command=ADD&empid=108&employeeName=Reena&gender=female&phoneNumber=9136243003&email=reena@reena.com&salary=8740000&designation=Web+Developer&city=MUmbai HTTP/1.1" 200 4095
+0:0:0:0:0:0:0:1 - - [08/May/2021:00:26:32 +0530] "GET /EmployeeManagement/EmployeeControllerServelet?command=LOAD&empId=6 HTTP/1.1" 200 1649
+0:0:0:0:0:0:0:1 - - [08/May/2021:00:26:37 +0530] "GET /EmployeeManagement/EmployeeControllerServelet?empId=6&command=UPDATE&empid=108&employeeName=Reena&gender=female&email=reena@reena.com&phoneNumber=9136243003&salary=8740000&designation=Web+Developer&city=Mumbai HTTP/1.1" 200 4095

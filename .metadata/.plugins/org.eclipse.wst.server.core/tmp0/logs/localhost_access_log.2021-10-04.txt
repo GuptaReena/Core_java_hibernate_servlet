@@ -1,0 +1,10 @@
+127.0.0.1 - - [04/Oct/2021:01:07:23 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [04/Oct/2021:01:07:24 +0530] "GET /EmployeeManagement/emphome.jsp HTTP/1.1" 200 9796
+0:0:0:0:0:0:0:1 - - [04/Oct/2021:01:07:24 +0530] "GET /EmployeeManagement/css/all.css HTTP/1.1" 200 73625
+0:0:0:0:0:0:0:1 - - [04/Oct/2021:01:07:24 +0530] "GET /EmployeeManagement/grid/grid.css HTTP/1.1" 200 8600
+0:0:0:0:0:0:0:1 - - [04/Oct/2021:01:07:24 +0530] "GET /EmployeeManagement/css/style.css HTTP/1.1" 200 4506
+0:0:0:0:0:0:0:1 - - [04/Oct/2021:01:07:24 +0530] "GET /EmployeeManagement/img/img2.png HTTP/1.1" 200 81335
+0:0:0:0:0:0:0:1 - - [04/Oct/2021:01:07:24 +0530] "GET /EmployeeManagement/img/icons8-web-design-64.png HTTP/1.1" 200 1195
+0:0:0:0:0:0:0:1 - - [04/Oct/2021:01:07:24 +0530] "GET /EmployeeManagement/webfonts/fa-brands-400.eot? HTTP/1.1" 200 134346
+0:0:0:0:0:0:0:1 - - [04/Oct/2021:01:07:24 +0530] "GET /EmployeeManagement/webfonts/fa-regular-400.eot? HTTP/1.1" 200 34034
+0:0:0:0:0:0:0:1 - - [04/Oct/2021:01:07:24 +0530] "GET /EmployeeManagement/webfonts/fa-solid-900.eot? HTTP/1.1" 200 203030

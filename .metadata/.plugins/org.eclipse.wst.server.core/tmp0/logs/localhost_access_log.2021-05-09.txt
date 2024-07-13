@@ -1,0 +1,5 @@
+127.0.0.1 - - [09/May/2021:23:48:39 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [09/May/2021:23:48:40 +0530] "GET /EmployeeManagement/print-emp-form.jsp HTTP/1.1" 200 1428
+0:0:0:0:0:0:0:1 - - [09/May/2021:23:48:50 +0530] "GET /EmployeeManagement/empid.jsp?command=LOAD&Id=5 HTTP/1.1" 404 739
+0:0:0:0:0:0:0:1 - - [09/May/2021:23:51:47 +0530] "GET /EmployeeManagement/print-emp-form.jsp HTTP/1.1" 200 1446
+0:0:0:0:0:0:0:1 - - [09/May/2021:23:51:54 +0530] "GET /EmployeeManagement/EmployeeControllerServelet?command=PRINT&Id=2 HTTP/1.1" 500 1810

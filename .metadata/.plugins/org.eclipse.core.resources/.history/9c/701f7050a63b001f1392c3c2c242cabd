@@ -1,0 +1,16 @@
+
+public class InsertDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		// Step1: Load the driver
+		// Step2 : Establish the connection to the db server
+		// step3 : create a statement and execute it
+		// Step4 : Handling the exception
+		
+		
+		
+	}
+
+}

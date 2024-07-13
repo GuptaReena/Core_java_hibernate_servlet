@@ -1,0 +1,138 @@
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name="products")
+public class ProductEntity {
+	
+	@Id
+	@Column(name="productCode")
+	private int productCode;
+	
+	@Column(name="productName")
+	private String productName;
+	
+	@Column(name="productDescription")
+	private String productDescription;
+	
+	@Column(name="buyPrice")
+	private int buyPrice;
+	
+	
+
+	public ProductEntity() {
+		super();
+	}
+
+
+
+	public ProductEntity(int productCode, String productName, String productDescription, int buyPrice) {
+		super();
+		this.productCode = productCode;
+		this.productName = productName;
+		this.productDescription = productDescription;
+		this.buyPrice = buyPrice;
+	}
+
+
+
+	public int getProductCode() {
+		return productCode;
+	}
+
+
+
+	public void setProductCode(int productCode) {
+		this.productCode = productCode;
+	}
+
+
+
+	public String getProductName() {
+		return productName;
+	}
+
+
+
+	public void setProductName(String productName) {
+		this.productName = productName;
+	}
+
+
+
+	public String getProductDescription() {
+		return productDescription;
+	}
+
+
+
+	public void setProductDescription(String productDescription) {
+		this.productDescription = productDescription;
+	}
+
+
+
+	public int getBuyPrice() {
+		return buyPrice;
+	}
+
+
+
+	public void setBuyPrice(int buyPrice) {
+		this.buyPrice = buyPrice;
+	}
+
+
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + buyPrice;
+		result = prime * result + productCode;
+		result = prime * result + ((productDescription == null) ? 0 : productDescription.hashCode());
+		result = prime * result + ((productName == null) ? 0 : productName.hashCode());
+		return result;
+	}
+
+
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		ProductEntity other = (ProductEntity) obj;
+		if (buyPrice != other.buyPrice)
+			return false;
+		if (productCode != other.productCode)
+			return false;
+		if (productDescription == null) {
+			if (other.productDescription != null)
+				return false;
+		} else if (!productDescription.equals(other.productDescription))
+			return false;
+		if (productName == null) {
+			if (other.productName != null)
+				return false;
+		} else if (!productName.equals(other.productName))
+			return false;
+		return true;
+	}
+
+
+
+	@Override
+	public String toString() {
+		return "ProductEntity [productCode=" + productCode + ", productName=" + productName + ", productDescription="
+				+ productDescription + ", buyPrice=" + buyPrice + "]";
+	}
+	
+	
+
+}

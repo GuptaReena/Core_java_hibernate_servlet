@@ -1,0 +1,58 @@
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+public class PreparedStatementDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		// step 1 : Load the driver
+		
+		try {
+			Class.forName("com.mysql.jdbc.Driver");
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+		// Step 2 : Establish Connection
+		
+		Connection conn = null;
+		
+		String connectionUrl = "jdbc:mysql://localhost:3306/demodb";
+		String userName ="root";
+		String password = "root";
+		
+		 try {
+			conn = DriverManager.getConnection(connectionUrl, userName, password);
+			
+			String query = "Insert into person_details values(?,?,?,?,?,?)";
+			
+			PreparedStatement pstmt = conn.prepareStatement(query);
+			
+			pstmt.setInt(1, 106);
+			pstmt.setString(2, "Ziva");
+			pstmt.setString(3, "Gupta");
+			pstmt.setString(4, "2014-07-26");
+			pstmt.setInt(5, 1234505590);
+			pstmt.setString(6, "LA");
+			
+			int rowAffected = pstmt.executeUpdate();
+			
+			System.out.println(rowAffected + "rowAffected.....");
+			
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+
+	}
+
+}

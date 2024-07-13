@@ -1,0 +1,12 @@
+127.0.0.1 - - [12/May/2024:20:10:07 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [12/May/2024:20:10:08 +0530] "GET /StudentTracker/list-students.jsp HTTP/1.1" 200 746
+0:0:0:0:0:0:0:1 - - [12/May/2024:20:10:08 +0530] "GET /StudentTracker/css/style1.css HTTP/1.1" 200 1082
+0:0:0:0:0:0:0:1 - - [12/May/2024:20:10:26 +0530] "GET /StudentTracker/login.jsp HTTP/1.1" 200 4204
+0:0:0:0:0:0:0:1 - - [12/May/2024:20:10:26 +0530] "GET /StudentTracker/css/style.css HTTP/1.1" 200 2608
+0:0:0:0:0:0:0:1 - - [12/May/2024:20:10:37 +0530] "GET /StudentTracker/login.jsp?theLocale=de_DE HTTP/1.1" 200 4190
+0:0:0:0:0:0:0:1 - - [12/May/2024:20:10:39 +0530] "GET /StudentTracker/login.jsp?theLocale=en_US HTTP/1.1" 200 4204
+0:0:0:0:0:0:0:1 - - [12/May/2024:20:11:12 +0530] "GET /StudentTracker/WEB-INF/classes/rst/StudentDbUtil.java HTTP/1.1" 404 682
+0:0:0:0:0:0:0:1 - - [12/May/2024:20:11:25 +0530] "GET /StudentTracker/StudentControllerServlet HTTP/1.1" 200 2769
+0:0:0:0:0:0:0:1 - - [12/May/2024:20:11:29 +0530] "GET /StudentTracker/StudentControllerServlet?command=LOAD&studentId=2 HTTP/1.1" 200 1505
+0:0:0:0:0:0:0:1 - - [12/May/2024:20:11:29 +0530] "GET /StudentTracker/css/add-student.css HTTP/1.1" 200 630
+0:0:0:0:0:0:0:1 - - [12/May/2024:20:11:29 +0530] "GET /StudentTracker/js/student-validation.js HTTP/1.1" 404 798
